@@ -1,13 +1,123 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("searchpage-bg.jpg") center top no-repeat;
+  background-size: cover;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+div#root {
+  margin: 0 20px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  text-align: initial;
+}
+
+.logo {
+  width: 140px;
+  display: inline-block;
+  margin-bottom: 30px;
+  text-shadow: 0 2px rgb(0 0 0 / 50%);
+}
+
+.search-section {
+  background-color: #21314d;
+  color: rgba(255, 255, 255, 1);
+  width: 300px;
+  position: relative;
+  padding: 1.143rem;
+  border-radius: 0.429rem;
+  float: left;
+}
+
+.search-section ul {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+  border-radius: 4px;
+}
+.search-section ul li {
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  padding: 3px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.right-content {
+  padding: 20px;
+  text-align: center;
+  float: right;
+  text-shadow: 0 0 32px rgb(0 0 0);
+}
+
+.right-content h1 {
+  color: #fff;
+}
+
+.right-content p {
+  color: #fff6b1;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.options-content {
+  display: flex;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.options-content .options {
+  margin: 4px;
+  flex-grow: 1;
+  display: flex;
+}
+.options-content .options span {
+  display: block;
+}
+
+.context-setting{
+  margin-bottom: 15px;
+}
+
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #aaa;
+  margin-right: 0.5em;
+}
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+
+.search-section ul li:hover {
+  background: #eeeeee;
 }
